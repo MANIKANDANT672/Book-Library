@@ -19,7 +19,7 @@ function displayBooks(bookArray) {
     bookArray.forEach(book => {
         const bookItem = document.createElement('div');
         bookItem.classList.add('book');
-        bookItem.innerHTML = `<strong><a href=${book.l}>${book.title}</a></strong><br><em>${book.author}</em>`;
+        bookItem.innerHTML = `<strong><a href=${book.l}>${book.title}</a></strong><br><em>${book.author}<br><button>Add</button></em>`;
         bookList.appendChild(bookItem);
     });
 }
@@ -36,7 +36,17 @@ function searchBooks() {
 document.addEventListener('DOMContentLoaded', () => {
     displayBooks(books);
 });
-
+// function log()
+// {
+//     let email=document.getElementById("email");
+//     let pass=document.getElementById("pass");
+//     if(email.value!=""&&pass.value!="")
+//     alert("Successfully Login!..");
+// }
+// function sign()
+// {
+//     alert("Successfully Sign Uped!...");
+// }
 function home()
 {
     let home=document.getElementById('home').style.display = "block";
