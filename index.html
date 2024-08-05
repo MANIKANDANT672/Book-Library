@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Library</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    <div class="top">
+            <img src="icons8-book-64.png " style="height: 50px; width: 50px; margin-top: 10px;">
+            <h1 class="h1"><span style="color: red;font-size:larger;">B</span>ook Library</h1>
+            <ul>
+                <li><a href="#home" onclick="home()">Home</a></li>
+                <li><a href="mybook.html" target="_blank">My Book</a></li>
+                <li><a href="login.html" target="_blank">Login</a></li>
+                <li><a href="sign.html" target="_blank">Sign Up</a></li>
+            </ul>
+   
+    </div>
+    <div id="home" style="display: none;">
+        <h1>You are already in home page!..<i class="fa fa-close" id="cross" onclick="cross()" style="font-size:40px;color: red;"></i></h1>
+        
+    </div>
+    <div class="container">
+        <input type="text" id="search" placeholder="Search for books..." onkeyup="searchBooks()">
+        <div id="book-list">
+            
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
